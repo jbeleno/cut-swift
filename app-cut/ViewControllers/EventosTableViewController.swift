@@ -84,7 +84,7 @@ class EventosTableViewController: UITableViewController {
         }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! EventoTableViewCell
-        
+        cell.selectionStyle = UITableViewCellSelectionStyle.none;
         
         let EventoItem = self.model.datasource.object(at: indexPath.row)
         let Evento = EventoListItem(json: JSON(EventoItem))
@@ -94,7 +94,7 @@ class EventosTableViewController: UITableViewController {
         cell.lblDescription.sizeToFit()
         
         let url_img = URL(string: Evento!.imagen)
-        let placeholderImage = UIImage(named: "img_background")!
+        let placeholderImage = UIImage(named: "img_placeholder")!
         if(url_img != nil){
             cell.imgThumbnail.af_setImage(withURL: url_img!, placeholderImage: placeholderImage)
         }

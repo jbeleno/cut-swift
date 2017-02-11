@@ -288,7 +288,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6vS-IP-Ix6">
                                             <rect key="frame" x="8" y="8" width="359" height="259"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LDU-xS-TaK">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="LDU-xS-TaK">
                                                     <rect key="frame" x="0.0" y="0.0" width="359" height="160"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="160" id="oYZ-9L-ws8"/>
@@ -589,7 +589,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XUW-Yt-spd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="if9-7d-iSt">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="if9-7d-iSt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.95686274509803915" green="0.39215686274509803" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -652,6 +652,7 @@
         <image name="img_logo" width="197" height="53"/>
         <image name="img_menu" width="16" height="16"/>
         <image name="img_noticias" width="16" height="16"/>
+        <image name="img_placeholder" width="395" height="170"/>
         <image name="img_reloj" width="16" height="16"/>
         <image name="img_twitter" width="16" height="16"/>
     </resources>
