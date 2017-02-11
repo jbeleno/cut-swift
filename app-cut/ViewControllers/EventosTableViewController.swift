@@ -7,17 +7,57 @@
 //
 
 import UIKit
+import SWRevealViewController
+import SwiftyJSON
+import Alamofire
+import AlamofireImage
 
 class EventosTableViewController: UITableViewController {
-
+    
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+    
+    var lblMsg: UILabel!
+    
+    var model = EventosModel()
+    let cellIdentifier = "EventoCell"
+    let segueIdentifier = "NoticiaSegue"
+    var link: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl!.attributedTitle = NSAttributedString(string: "Desliza hacia abajo para actualizar")
+        self.refreshControl!.addTarget(self, action: #selector(refresh(sender:)), for: UIControlEvents.valueChanged)
+        self.tableView.addSubview(self.refreshControl!)
+        
+        self.lblMsg = UILabel( frame: CGRect(x: 0, y: 0, width: self.tableView.bounds.size.width, height: self.tableView.bounds.size.height))
+        lblMsg.textAlignment    = NSTextAlignment.center;
+        
+        // Load data for first time
+        model.populateWithDataSource(table: self.tableView, lblMessage: lblMsg)
+        
+        // Row sizes in the tableView
+        tableView.rowHeight = 275.0
+        tableView.estimatedRowHeight = 275.0
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    func refresh(sender:AnyObject)
+    {
+        model.clearDataSource(table: self.tableView)
+        model.populateWithDataSource(table: self.tableView, lblMessage: self.lblMsg)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,23 +69,38 @@ class EventosTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return (self.model.datasource.count)
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        if indexPath.row == (model.datasource.count - 1){
+            model.populateWithDataSource(table: self.tableView, lblMessage: self.lblMsg)
+        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! EventoTableViewCell
+        
+        
+        let EventoItem = self.model.datasource.object(at: indexPath.row)
+        let Evento = EventoListItem(json: JSON(EventoItem))
+        
+        cell.lblTitle.text = Evento!.titulo
+        cell.lblDescription.text = Evento!.descripcion
+        cell.lblDescription.sizeToFit()
+        
+        let url_img = URL(string: Evento!.imagen)
+        let placeholderImage = UIImage(named: "img_background")!
+        if(url_img != nil){
+            cell.imgThumbnail.af_setImage(withURL: url_img!, placeholderImage: placeholderImage)
+        }
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

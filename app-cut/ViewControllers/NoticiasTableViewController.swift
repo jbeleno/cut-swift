@@ -90,14 +90,12 @@ class NoticiasTableViewController: UITableViewController {
         
     
         let NoticiaItem = self.model.datasource.object(at: indexPath.row)
-        print(NoticiaItem)
         let Noticia = NoticiaListItem(json: JSON(NoticiaItem))
         
         cell.lblTitle.text = Noticia!.titulo
         cell.lblTitle.sizeToFit()
         cell.lblTime.text = Noticia!.tiempo
         
-        print(Noticia!.imagen)
         let url_img = URL(string: Noticia!.imagen)
         let placeholderImage = UIImage(named: "img_background")!
         if(url_img != nil){

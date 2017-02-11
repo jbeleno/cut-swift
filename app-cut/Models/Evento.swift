@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 struct EventoListItem{
-    let id: Int
+    let id: String
     let titulo: String
     let descripcion: String
     let tiempo: String
@@ -18,7 +18,7 @@ struct EventoListItem{
     
     init?(json: JSON){
         guard
-            let id = json["id"].int,
+            let id = json["id"].string,
             let titulo = json["titulo"].string,
             let descripcion = json["descripcion"].string,
             let tiempo = json["tiempo"].string,
