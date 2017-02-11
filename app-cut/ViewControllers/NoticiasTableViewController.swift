@@ -101,7 +101,24 @@ class NoticiasTableViewController: UITableViewController {
         if(url_img != nil){
             cell.imgThumbnail.af_setImage(withURL: url_img!, placeholderImage: placeholderImage)
         }
+        
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let NoticiaItem = self.model.datasource.object(at: indexPath.row)
+        let Noticia = NoticiaListItem(json: JSON(NoticiaItem))
+        
+        self.link = Noticia!.url
+        
+        self.performSegue(withIdentifier: segueIdentifier, sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == segueIdentifier){
+            let view2load = segue.destination as! NoticiaViewController
+            view2load.link = self.link!
+        }
     }
     
 

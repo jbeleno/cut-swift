@@ -9,6 +9,29 @@
 import Foundation
 import SwiftyJSON
 
+struct Evento{
+    let titulo: String
+    let descripcion: String
+    let agenda: String
+    let imagen: String
+    
+    init?(json: JSON){
+        guard
+            let titulo = json["titulo"].string,
+            let descripcion = json["descripcion"].string,
+            let agenda = json["agenda"].string,
+            let imagen = json["imagen"].string
+            else{
+                return nil
+        }
+        
+        self.titulo = titulo
+        self.descripcion = descripcion
+        self.agenda = agenda
+        self.imagen = imagen
+    }
+}
+
 struct EventoListItem{
     let id: String
     let titulo: String

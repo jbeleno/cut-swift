@@ -10,4 +10,6 @@ target 'app-cut' do
   pod 'AlamofireImage', '~> 3.2.0'
   pod 'SwiftyJSON', '~> 3.1.4'
   pod 'SWRevealViewController', '~> 2.3.0'
+  pod 'Fabric'
+  pod 'TwitterKit'
 end

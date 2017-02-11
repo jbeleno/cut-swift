@@ -20,8 +20,8 @@ class EventosTableViewController: UITableViewController {
     
     var model = EventosModel()
     let cellIdentifier = "EventoCell"
-    let segueIdentifier = "NoticiaSegue"
-    var link: String?
+    let segueIdentifier = "EventoSegue"
+    var eventIdentifier: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,7 +98,24 @@ class EventosTableViewController: UITableViewController {
         if(url_img != nil){
             cell.imgThumbnail.af_setImage(withURL: url_img!, placeholderImage: placeholderImage)
         }
+        
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let EventoItem = self.model.datasource.object(at: indexPath.row)
+        let Evento = EventoListItem(json: JSON(EventoItem))
+        
+        self.eventIdentifier = Evento!.id
+        
+        self.performSegue(withIdentifier: segueIdentifier, sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == segueIdentifier){
+            let view2load = segue.destination as! EventoViewController
+            view2load.eventIdentifier = self.eventIdentifier!
+        }
     }
     
 
