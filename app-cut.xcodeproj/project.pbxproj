@@ -16,13 +16,13 @@
 		0D29CD101E4F641900FC0724 /* EventosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D29CD0F1E4F641900FC0724 /* EventosModel.swift */; };
 		0D29CD121E4F6AF300FC0724 /* EventoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D29CD111E4F6AF300FC0724 /* EventoTableViewCell.swift */; };
 		0D4DAD861E4B345A0071DE7F /* EventosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4DAD851E4B345A0071DE7F /* EventosTableViewController.swift */; };
-		0D4DAD881E4B347E0071DE7F /* TwitterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4DAD871E4B347E0071DE7F /* TwitterTableViewController.swift */; };
 		0D4DAD8A1E4B34A60071DE7F /* ConsultarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4DAD891E4B34A60071DE7F /* ConsultarViewController.swift */; };
 		0D4DAD8C1E4B34C10071DE7F /* InformacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4DAD8B1E4B34C10071DE7F /* InformacionViewController.swift */; };
 		0D4DAD8E1E4B4A990071DE7F /* NoticiaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4DAD8D1E4B4A990071DE7F /* NoticiaTableViewCell.swift */; };
 		0D735ABF1E4F880100E9CF8F /* NoticiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D735ABE1E4F880100E9CF8F /* NoticiaViewController.swift */; };
 		0D735AC11E4F92EA00E9CF8F /* EventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D735AC01E4F92EA00E9CF8F /* EventoViewController.swift */; };
 		0D735AC31E4FB53C00E9CF8F /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D735AC21E4FB53C00E9CF8F /* CustomLabel.swift */; };
+		0D735AC61E4FBD0E00E9CF8F /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D735AC51E4FBD0E00E9CF8F /* TwitterViewController.swift */; };
 		0D9222EA1E4A1DC200491F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9222E91E4A1DC200491F1A /* AppDelegate.swift */; };
 		0D9222EF1E4A1DC200491F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9222ED1E4A1DC200491F1A /* Main.storyboard */; };
 		0D9222F11E4A1DC200491F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9222F01E4A1DC200491F1A /* Assets.xcassets */; };
@@ -38,13 +38,13 @@
 		0D29CD0F1E4F641900FC0724 /* EventosModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventosModel.swift; path = Models/EventosModel.swift; sourceTree = "<group>"; };
 		0D29CD111E4F6AF300FC0724 /* EventoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventoTableViewCell.swift; path = Cells/EventoTableViewCell.swift; sourceTree = "<group>"; };
 		0D4DAD851E4B345A0071DE7F /* EventosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventosTableViewController.swift; path = ViewControllers/EventosTableViewController.swift; sourceTree = "<group>"; };
-		0D4DAD871E4B347E0071DE7F /* TwitterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterTableViewController.swift; path = ViewControllers/TwitterTableViewController.swift; sourceTree = "<group>"; };
 		0D4DAD891E4B34A60071DE7F /* ConsultarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsultarViewController.swift; path = ViewControllers/ConsultarViewController.swift; sourceTree = "<group>"; };
 		0D4DAD8B1E4B34C10071DE7F /* InformacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InformacionViewController.swift; path = ViewControllers/InformacionViewController.swift; sourceTree = "<group>"; };
 		0D4DAD8D1E4B4A990071DE7F /* NoticiaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoticiaTableViewCell.swift; path = Cells/NoticiaTableViewCell.swift; sourceTree = "<group>"; };
 		0D735ABE1E4F880100E9CF8F /* NoticiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoticiaViewController.swift; path = ViewControllers/NoticiaViewController.swift; sourceTree = "<group>"; };
 		0D735AC01E4F92EA00E9CF8F /* EventoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventoViewController.swift; path = ViewControllers/EventoViewController.swift; sourceTree = "<group>"; };
 		0D735AC21E4FB53C00E9CF8F /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomLabel.swift; path = Helpers/CustomLabel.swift; sourceTree = "<group>"; };
+		0D735AC51E4FBD0E00E9CF8F /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterViewController.swift; path = ViewControllers/TwitterViewController.swift; sourceTree = "<group>"; };
 		0D9222E61E4A1DC200491F1A /* app-cut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-cut.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9222E91E4A1DC200491F1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D9222EE1E4A1DC200491F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,11 +92,11 @@
 			children = (
 				0D1041431E4A55B0007566C1 /* NoticiasTableViewController.swift */,
 				0D4DAD851E4B345A0071DE7F /* EventosTableViewController.swift */,
-				0D4DAD871E4B347E0071DE7F /* TwitterTableViewController.swift */,
 				0D4DAD891E4B34A60071DE7F /* ConsultarViewController.swift */,
 				0D4DAD8B1E4B34C10071DE7F /* InformacionViewController.swift */,
 				0D735ABE1E4F880100E9CF8F /* NoticiaViewController.swift */,
 				0D735AC01E4F92EA00E9CF8F /* EventoViewController.swift */,
+				0D735AC51E4FBD0E00E9CF8F /* TwitterViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -175,6 +175,7 @@
 				0D9222E41E4A1DC200491F1A /* Resources */,
 				402D62884213266A3D5344AE /* [CP] Embed Pods Frameworks */,
 				F1671FC12C62EA622C2B1D5B /* [CP] Copy Pods Resources */,
+				0D735AC41E4FB8F500E9CF8F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -234,6 +235,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0D735AC41E4FB8F500E9CF8F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 82658fc5b27a5dee8ede8b97d915c427cc45298a d27911ccc78edf92b696ad8ba1308af89a9ded8b394ff955440203a14d00575d";
+		};
 		402D62884213266A3D5344AE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,9 +306,9 @@
 				0D29CD101E4F641900FC0724 /* EventosModel.swift in Sources */,
 				0D29CD0E1E4F631000FC0724 /* Evento.swift in Sources */,
 				0D9222EA1E4A1DC200491F1A /* AppDelegate.swift in Sources */,
-				0D4DAD881E4B347E0071DE7F /* TwitterTableViewController.swift in Sources */,
 				0D735AC31E4FB53C00E9CF8F /* CustomLabel.swift in Sources */,
 				0D1041421E4A4A64007566C1 /* MenuTableViewCell.swift in Sources */,
+				0D735AC61E4FBD0E00E9CF8F /* TwitterViewController.swift in Sources */,
 				0D14EA311E4CDB180030BF07 /* Noticia.swift in Sources */,
 				0D1041441E4A55B0007566C1 /* NoticiasTableViewController.swift in Sources */,
 				0D735ABF1E4F880100E9CF8F /* NoticiaViewController.swift in Sources */,

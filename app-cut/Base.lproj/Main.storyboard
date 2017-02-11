@@ -177,7 +177,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="qZs-G0-qik" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="gtR-uf-XPg"/>
+                                            <segue destination="x8V-Of-lwB" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="oja-39-Lxu"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="Ttd-Lk-yWz">
@@ -644,39 +644,6 @@
             </objects>
             <point key="canvasLocation" x="1986" y="1475"/>
         </scene>
-        <!--Twitter Table View Controller-->
-        <scene sceneID="j9v-T2-tTI">
-            <objects>
-                <tableViewController id="sAO-eK-FHM" customClass="TwitterTableViewController" customModule="app_cut" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Xoo-m6-VXl">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gPf-hC-Qd1">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gPf-hC-Qd1" id="zf2-ov-xX2">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="sAO-eK-FHM" id="ViZ-w4-OfF"/>
-                            <outlet property="delegate" destination="sAO-eK-FHM" id="lyf-mc-dPb"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="dUc-vR-SwW">
-                        <barButtonItem key="leftBarButtonItem" image="img_menu" id="glo-Fa-4qm">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="r32-ce-cDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2919" y="806"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="4A8-8e-zi3">
             <objects>
@@ -746,7 +713,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XUW-Yt-spd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="if9-7d-iSt">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="if9-7d-iSt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -767,7 +734,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TQE-O6-dMD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="rqg-XM-Pbw">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="rqg-XM-Pbw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -782,25 +749,50 @@
             </objects>
             <point key="canvasLocation" x="1980" y="37"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="oFc-gC-3go">
+        <!--@cutcolombia-->
+        <scene sceneID="wMT-uy-X20">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qZs-G0-qik" sceneMemberID="viewController">
+                <tableViewController id="PXb-cA-S3Z" customClass="TwitterViewController" customModule="app_cut" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="F0U-JR-SSE">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="PXb-cA-S3Z" id="cT8-FW-31w"/>
+                            <outlet property="delegate" destination="PXb-cA-S3Z" id="W3J-Ko-Pxm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="@cutcolombia" id="Vv3-LT-bEr">
+                        <barButtonItem key="leftBarButtonItem" image="img_menu" id="GAX-lO-HIA"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="GAX-lO-HIA" id="2OT-98-0Qe"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bqe-KP-1WX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2919.1999999999998" y="753.37331334332839"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Try-0l-mdn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x8V-Of-lwB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="ZdZ-G3-2vI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="WlP-4q-T9C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.95848065609999999" green="0.39389848710000003" blue="0.2086200118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.95686274510000002" green="0.3921568627" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="sAO-eK-FHM" kind="relationship" relationship="rootViewController" id="ZEG-6Z-UBf"/>
+                        <segue destination="PXb-cA-S3Z" kind="relationship" relationship="rootViewController" id="vJa-aR-Sv3"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EVF-Hc-6Uc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Acf-TG-ktc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1985" y="806"/>
+            <point key="canvasLocation" x="1980" y="753.37331334332839"/>
         </scene>
     </scenes>
     <resources>

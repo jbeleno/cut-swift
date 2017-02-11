@@ -2,21 +2,31 @@ PODS:
   - Alamofire (4.3.0)
   - AlamofireImage (3.2.0):
     - Alamofire (~> 4.1)
+  - Fabric (1.6.11)
   - SwiftyJSON (3.1.4)
   - SWRevealViewController (2.3.0)
+  - TwitterCore (2.8.0):
+    - Fabric
+  - TwitterKit (2.8.0):
+    - TwitterCore (= 2.8.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3.0)
   - AlamofireImage (~> 3.2.0)
+  - Fabric
   - SwiftyJSON (~> 3.1.4)
   - SWRevealViewController (~> 2.3.0)
+  - TwitterKit
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
+  TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
+  TwitterKit: f7b0a1adcb800f6446ff0ef70164797376522ff3
 
-PODFILE CHECKSUM: 933fe849b7cf3d71d78b44454971b27ad904771b
+PODFILE CHECKSUM: 997428183d8b3c88e8b1dedeb1237abf282ea906
 
 COCOAPODS: 1.2.0
