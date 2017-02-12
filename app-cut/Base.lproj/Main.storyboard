@@ -773,7 +773,7 @@
             </objects>
             <point key="canvasLocation" x="945" y="1475"/>
         </scene>
-        <!--Informacion View Controller-->
+        <!--Información-->
         <scene sceneID="dT2-oG-UMR">
             <objects>
                 <viewController id="jml-tR-CoK" customClass="InformacionViewController" customModule="app_cut" customModuleProvider="target" sceneMemberID="viewController">
@@ -784,9 +784,119 @@
                     <view key="view" contentMode="scaleToFill" id="pnx-kb-ehD">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CUT Colombia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1z-yN-763">
+                                <rect key="frame" x="24" y="24" width="335" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="9qs-Gv-CdR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPn-Bc-gAK">
+                                <rect key="frame" x="16" y="52" width="343" height="1"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="lfU-Gu-Xfo"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_home" translatesAutoresizingMaskIntoConstraints="NO" id="PD0-cj-UQp">
+                                <rect key="frame" x="24" y="73" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="HZW-IB-IMT"/>
+                                    <constraint firstAttribute="width" constant="16" id="INX-2V-Kc2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calle 35 Nº 7-25 / Piso 9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2V-Gu-ka8">
+                                <rect key="frame" x="52" y="73" width="307" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="4LA-wi-adH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_phone" translatesAutoresizingMaskIntoConstraints="NO" id="JZE-tU-sKy">
+                                <rect key="frame" x="24" y="101" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="fn5-wj-np7"/>
+                                    <constraint firstAttribute="width" constant="16" id="lKz-Ew-98n"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PBX: 323 75 50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChA-cx-YKg">
+                                <rect key="frame" x="52" y="101" width="307" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="QQ2-cA-dLj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_mail" translatesAutoresizingMaskIntoConstraints="NO" id="dSV-rJ-ANL">
+                                <rect key="frame" x="24" y="129" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="0AM-TB-NC1"/>
+                                    <constraint firstAttribute="height" constant="16" id="cRL-lj-4Rr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="prensacut@cut.org.co" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jf9-GH-c1F">
+                                <rect key="frame" x="52" y="129" width="307" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="bZ0-Zr-ytp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_twitter" translatesAutoresizingMaskIntoConstraints="NO" id="XE7-iG-Kdc">
+                                <rect key="frame" x="24" y="157" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Y8C-SU-GSD"/>
+                                    <constraint firstAttribute="width" constant="16" id="kNj-dw-Azp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@cutcolombia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJR-Tb-rLj">
+                                <rect key="frame" x="52" y="157" width="307" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="aLW-yc-iR4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u2V-Gu-ka8" firstAttribute="top" secondItem="TPn-Bc-gAK" secondAttribute="bottom" constant="20" id="1Gt-35-Su8"/>
+                            <constraint firstItem="JZE-tU-sKy" firstAttribute="leading" secondItem="pnx-kb-ehD" secondAttribute="leading" constant="24" id="26d-VS-4UV"/>
+                            <constraint firstAttribute="trailing" secondItem="TPn-Bc-gAK" secondAttribute="trailing" constant="16" id="2WL-Cn-RHl"/>
+                            <constraint firstItem="PD0-cj-UQp" firstAttribute="leading" secondItem="pnx-kb-ehD" secondAttribute="leading" constant="24" id="55p-2C-enV"/>
+                            <constraint firstAttribute="trailing" secondItem="QJR-Tb-rLj" secondAttribute="trailing" constant="16" id="9E8-WG-iiZ"/>
+                            <constraint firstItem="ChA-cx-YKg" firstAttribute="leading" secondItem="JZE-tU-sKy" secondAttribute="trailing" constant="12" id="9XX-ip-lWP"/>
+                            <constraint firstAttribute="trailing" secondItem="u2V-Gu-ka8" secondAttribute="trailing" constant="16" id="AZS-ZN-UuS"/>
+                            <constraint firstAttribute="trailing" secondItem="ChA-cx-YKg" secondAttribute="trailing" constant="16" id="Aed-Xl-ESs"/>
+                            <constraint firstItem="dSV-rJ-ANL" firstAttribute="top" secondItem="JZE-tU-sKy" secondAttribute="bottom" constant="12" id="BAP-q3-T1H"/>
+                            <constraint firstItem="dSV-rJ-ANL" firstAttribute="leading" secondItem="pnx-kb-ehD" secondAttribute="leading" constant="24" id="E6A-xo-53M"/>
+                            <constraint firstItem="XE7-iG-Kdc" firstAttribute="top" secondItem="dSV-rJ-ANL" secondAttribute="bottom" constant="12" id="HUL-1t-cD9"/>
+                            <constraint firstItem="TPn-Bc-gAK" firstAttribute="leading" secondItem="pnx-kb-ehD" secondAttribute="leading" constant="16" id="JOB-se-Zx4"/>
+                            <constraint firstItem="u2V-Gu-ka8" firstAttribute="leading" secondItem="PD0-cj-UQp" secondAttribute="trailing" constant="12" id="SMZ-CG-U6C"/>
+                            <constraint firstItem="JZE-tU-sKy" firstAttribute="top" secondItem="PD0-cj-UQp" secondAttribute="bottom" constant="12" id="U1T-bw-5TS"/>
+                            <constraint firstItem="W1z-yN-763" firstAttribute="leading" secondItem="pnx-kb-ehD" secondAttribute="leading" constant="24" id="VBa-bi-5co"/>
+                            <constraint firstAttribute="trailing" secondItem="W1z-yN-763" secondAttribute="trailing" constant="16" id="VlI-oK-dMQ"/>
+                            <constraint firstItem="Jf9-GH-c1F" firstAttribute="leading" secondItem="dSV-rJ-ANL" secondAttribute="trailing" constant="12" id="YOW-os-dWv"/>
+                            <constraint firstItem="QJR-Tb-rLj" firstAttribute="leading" secondItem="XE7-iG-Kdc" secondAttribute="trailing" constant="12" id="Zyv-gS-Glq"/>
+                            <constraint firstItem="TPn-Bc-gAK" firstAttribute="top" secondItem="W1z-yN-763" secondAttribute="bottom" constant="8" id="fgA-Ut-L0Z"/>
+                            <constraint firstItem="XE7-iG-Kdc" firstAttribute="leading" secondItem="pnx-kb-ehD" secondAttribute="leading" constant="24" id="idl-jq-wGp"/>
+                            <constraint firstItem="QJR-Tb-rLj" firstAttribute="top" secondItem="Jf9-GH-c1F" secondAttribute="bottom" constant="12" id="juB-TE-1Ap"/>
+                            <constraint firstItem="ChA-cx-YKg" firstAttribute="top" secondItem="u2V-Gu-ka8" secondAttribute="bottom" constant="12" id="pAv-2O-Mv9"/>
+                            <constraint firstItem="Jf9-GH-c1F" firstAttribute="top" secondItem="ChA-cx-YKg" secondAttribute="bottom" constant="12" id="rrN-EZ-vSW"/>
+                            <constraint firstItem="W1z-yN-763" firstAttribute="top" secondItem="wDE-HI-vFD" secondAttribute="bottom" constant="24" id="s6B-vp-GhP"/>
+                            <constraint firstAttribute="trailing" secondItem="Jf9-GH-c1F" secondAttribute="trailing" constant="16" id="sFf-qR-Zy8"/>
+                            <constraint firstItem="PD0-cj-UQp" firstAttribute="top" secondItem="TPn-Bc-gAK" secondAttribute="bottom" constant="20" id="uXV-NJ-SDg"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ovh-MN-cWc">
+                    <navigationItem key="navigationItem" title="Información" id="Ovh-MN-cWc">
                         <barButtonItem key="leftBarButtonItem" image="img_menu" id="o8p-G6-fov">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -794,7 +904,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AtH-X9-8O5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="158" y="2310"/>
+            <point key="canvasLocation" x="157.59999999999999" y="2309.5952023988007"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EbP-as-yUe">
@@ -908,10 +1018,13 @@
         <image name="img_background" width="48" height="48"/>
         <image name="img_consulta" width="16" height="16"/>
         <image name="img_eventos" width="16" height="16"/>
+        <image name="img_home" width="16" height="16"/>
         <image name="img_informacion" width="16" height="16"/>
         <image name="img_logo" width="197" height="53"/>
+        <image name="img_mail" width="16" height="16"/>
         <image name="img_menu" width="16" height="16"/>
         <image name="img_noticias" width="16" height="16"/>
+        <image name="img_phone" width="16" height="16"/>
         <image name="img_placeholder" width="395" height="170"/>
         <image name="img_reloj" width="16" height="16"/>
         <image name="img_twitter" width="16" height="16"/>
