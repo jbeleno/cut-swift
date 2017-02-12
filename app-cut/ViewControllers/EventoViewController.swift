@@ -59,9 +59,9 @@ class EventoViewController: UIViewController {
                         let evento = response.object(forKey: self.paramEvento) as! NSDictionary
                         
                         self.lblTitle.text = evento.object(forKey: "titulo") as! String?
-                        //self.lblTitle.sizeToFit()
+                        self.lblTitle.sizeToFit()
                         self.lblDescription.text = evento.object(forKey: "descripcion") as! String?
-                        //self.lblDescription.sizeToFit()
+                        self.lblDescription.sizeToFit()
                         
                         let url_img = URL(string: (evento.object(forKey: "imagen") as! String?)!)
                         let placeholderImage = UIImage(named: "img_placeholder")!
@@ -77,13 +77,12 @@ class EventoViewController: UIViewController {
                             do {
                                 let attributedText = try NSAttributedString(data: htmlData, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
                                 self.lblSchedule.attributedText = attributedText
-                                //self.lblSchedule.sizeToFit()
+                                self.lblSchedule.sizeToFit()
                             } catch let e as NSError {
                                 print("Couldn't translate \(htmlText): \(e.localizedDescription) ")
                             }
                         }
                         
-                        self.lblTitle.layoutIfNeeded()
                         
                         // Hack from http://stackoverflow.com/a/38408928
                         /*var contentRect = CGRect.zero
@@ -92,16 +91,16 @@ class EventoViewController: UIViewController {
                             print(contentRect.size.height)
                         }*/
                         
-                        // Custom Hack
-                        //var contentRect = CGRect.zero
-                        //contentRect.size.width = self.view.frame.size.width
-                        //contentRect.size.height += self.imgThumbnail.frame.size.height
-                        //contentRect.size.height += self.lblTitle.frame.size.height
-                        //contentRect.size.height += self.lblDescription.frame.size.height
-                        //contentRect.size.height += self.lblSchedule.frame.size.height
-                        //contentRect.size.height += 16 + 8 + 8 + 8 + 8 + 21
+                        // Custom Hack: Machete: Gambiarra
+                        var contentRect = CGRect.zero
+                        contentRect.size.width = self.view.frame.size.width
+                        contentRect.size.height += self.imgThumbnail.frame.size.height
+                        contentRect.size.height += self.lblTitle.frame.size.height
+                        contentRect.size.height += self.lblDescription.frame.size.height
+                        contentRect.size.height += self.lblSchedule.frame.size.height
+                        contentRect.size.height += 16 + 8 + 8 + 8 + 8 + 21
                         
-                        //self.scrollView.contentSize = contentRect.size
+                        self.scrollView.contentSize = contentRect.size
                         
                     }else {
                         self.lblTitle.text = self.errorMessage

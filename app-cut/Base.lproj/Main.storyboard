@@ -394,19 +394,19 @@
                                                     <constraint firstAttribute="height" constant="160" id="kR4-E5-cWe"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Cargando..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRF-6h-UfK" customClass="CustomLabel" customModule="app_cut" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargando..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRF-6h-UfK" customClass="CustomLabel" customModule="app_cut" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="176" width="343" height="19.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                 <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pD6-kV-79N" customClass="CustomLabel" customModule="app_cut" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pD6-kV-79N" customClass="CustomLabel" customModule="app_cut" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="203.5" width="343" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Agenda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdg-Dg-MhB">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agenda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdg-Dg-MhB">
                                                 <rect key="frame" x="16" y="211.5" width="343" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="gi7-YJ-ZLG"/>
@@ -415,7 +415,7 @@
                                                 <color key="textColor" red="0.95686274510000002" green="0.3921568627" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C76-Ki-YrO" customClass="CustomLabel" customModule="app_cut" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C76-Ki-YrO" customClass="CustomLabel" customModule="app_cut" customModuleProvider="target">
                                                 <rect key="frame" x="16" y="240.5" width="343" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -427,7 +427,6 @@
                                             <constraint firstItem="AQz-44-KGc" firstAttribute="leading" secondItem="gHe-C4-5uI" secondAttribute="leading" id="3WT-DY-wsz"/>
                                             <constraint firstItem="Vdg-Dg-MhB" firstAttribute="top" secondItem="pD6-kV-79N" secondAttribute="bottom" constant="8" id="9Na-kx-Iqh"/>
                                             <constraint firstAttribute="trailing" secondItem="yRF-6h-UfK" secondAttribute="trailing" constant="16" id="9aq-gZ-6Zc"/>
-                                            <constraint firstAttribute="bottom" secondItem="C76-Ki-YrO" secondAttribute="bottom" constant="8" id="9s1-az-UWj"/>
                                             <constraint firstItem="C76-Ki-YrO" firstAttribute="leading" secondItem="gHe-C4-5uI" secondAttribute="leading" constant="16" id="CPh-hh-imA"/>
                                             <constraint firstAttribute="trailing" secondItem="AQz-44-KGc" secondAttribute="trailing" id="LLd-bK-bae"/>
                                             <constraint firstItem="yRF-6h-UfK" firstAttribute="top" secondItem="AQz-44-KGc" secondAttribute="bottom" constant="16" id="LhT-YH-dUq"/>
