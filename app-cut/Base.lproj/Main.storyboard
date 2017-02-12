@@ -900,6 +900,9 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="o8p-G6-fov" id="dYP-ap-XYv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AtH-X9-8O5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
