@@ -12,4 +12,6 @@ target 'app-cut' do
   pod 'SWRevealViewController', '~> 2.3.0'
   pod 'Fabric'
   pod 'TwitterKit'
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
 end
