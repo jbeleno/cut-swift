@@ -15,6 +15,7 @@ import FirebaseInstanceID
 import FirebaseMessaging
 import Alamofire
 import SwiftyJSON
+import SWRevealViewController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -78,6 +79,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Message ID: \(messageID)")
         }
         
+        handleNotification(userInfo: userInfo)
+        
         // Print full message.
         print(userInfo)
     }
@@ -91,10 +94,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Message ID: \(messageID)")
         }
         
+        handleNotification(userInfo: userInfo)
+        
         // Print full message.
         print(userInfo)
         
         completionHandler(UIBackgroundFetchResult.newData)
+    }
+    
+    func handleNotification(userInfo: [AnyHashable : Any]){
+        let viewType = userInfo[self.viewName] as! String
+        let viewIdentifier = userInfo[self.postIdentifier] as! String
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let reveal = storyboard.instantiateViewController(withIdentifier: "Reveal") as! SWRevealViewController
+        var navController : UINavigationController
+        self.window?.rootViewController = reveal
+        self.window?.makeKeyAndVisible()
+        
+        if (viewType == "evento"){
+            navController = storyboard.instantiateViewController(withIdentifier: "navEventos") as! UINavigationController
+            let eventoController = storyboard.instantiateViewController(withIdentifier: "vistaEvento") as! EventoViewController
+            eventoController.eventIdentifier = viewIdentifier
+            navController.pushViewController(eventoController, animated: true)
+            reveal.setFront(navController, animated: true)
+        }else if (viewType == "noticia"){
+            navController = storyboard.instantiateViewController(withIdentifier: "navNoticias") as! UINavigationController
+            let noticiaController = storyboard.instantiateViewController(withIdentifier: "vistaNoticia") as! NoticiaViewController
+            noticiaController.link = viewIdentifier
+            navController.pushViewController(noticiaController, animated: true)
+            reveal.setFront(navController, animated: true)
+        }
+        reveal.setFrontViewPosition(FrontViewPosition.left, animated: true)
     }
     
     func tokenRefreshNotification(_ notification: Notification) {
@@ -206,6 +237,8 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
             print("Message ID: \(messageID)")
         }
         
+        handleNotification(userInfo: userInfo)
+        
         // Print full message.
         print(userInfo)
         
@@ -221,6 +254,8 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         if let messageID = userInfo[self.gcmMessageIDKey] {
             print("Message ID: \(messageID)")
         }
+        
+        handleNotification(userInfo: userInfo)
         
         // Print full message.
         print(userInfo)

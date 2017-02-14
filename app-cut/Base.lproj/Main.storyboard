@@ -13,7 +13,7 @@
         <!--Reveal View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SWRevealViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Reveal" id="BYZ-38-t0r" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -272,7 +272,7 @@
         <!--Eventos Table View Controller-->
         <scene sceneID="eFv-9S-jGm">
             <objects>
-                <tableViewController id="psN-Bo-24D" customClass="EventosTableViewController" customModule="app_cut" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="vistaEvento" id="psN-Bo-24D" customClass="EventosTableViewController" customModule="app_cut" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="275" sectionHeaderHeight="28" sectionFooterHeight="28" id="fEI-et-25L">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -476,7 +476,7 @@
         <!--Noticias Table View Controller-->
         <scene sceneID="YAl-EI-KDw">
             <objects>
-                <tableViewController id="RsR-Qx-Wj9" customClass="NoticiasTableViewController" customModule="app_cut" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="vistaNoticia" id="RsR-Qx-Wj9" customClass="NoticiasTableViewController" customModule="app_cut" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" id="lKt-DN-joI">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -757,7 +757,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BCT-pU-GD9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="sux-Wv-JnB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="sux-Wv-JnB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -931,7 +931,7 @@
         <!--Navigation Controller-->
         <scene sceneID="slT-4E-VL9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XUW-Yt-spd" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navNoticias" automaticallyAdjustsScrollViewInsets="NO" id="XUW-Yt-spd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="if9-7d-iSt">
@@ -952,7 +952,7 @@
         <!--Navigation Controller-->
         <scene sceneID="HwK-Qd-LzI">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TQE-O6-dMD" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navEventos" automaticallyAdjustsScrollViewInsets="NO" id="TQE-O6-dMD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="rqg-XM-Pbw">
@@ -1000,7 +1000,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x8V-Of-lwB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="WlP-4q-T9C">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="WlP-4q-T9C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1032,6 +1032,6 @@
         <image name="img_twitter" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2RW-Bh-XBR"/>
+        <segue reference="A6R-2c-Ise"/>
     </inferredMetricsTieBreakers>
 </document>
