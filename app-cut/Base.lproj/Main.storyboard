@@ -269,7 +269,7 @@
             </objects>
             <point key="canvasLocation" x="944.79999999999995" y="37.331334332833585"/>
         </scene>
-        <!--Eventos Table View Controller-->
+        <!--Eventos-->
         <scene sceneID="eFv-9S-jGm">
             <objects>
                 <tableViewController storyboardIdentifier="vistaEvento" id="psN-Bo-24D" customClass="EventosTableViewController" customModule="app_cut" customModuleProvider="target" sceneMemberID="viewController">
@@ -356,7 +356,7 @@
                             <outlet property="delegate" destination="psN-Bo-24D" id="1tp-A9-ou1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Ffx-xd-Cmj">
+                    <navigationItem key="navigationItem" title="Eventos" id="Ffx-xd-Cmj">
                         <barButtonItem key="leftBarButtonItem" image="img_menu" id="qHb-zx-LNL">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -473,7 +473,7 @@
             </objects>
             <point key="canvasLocation" x="3917.5999999999999" y="35.532233883058474"/>
         </scene>
-        <!--Noticias Table View Controller-->
+        <!--Noticias-->
         <scene sceneID="YAl-EI-KDw">
             <objects>
                 <tableViewController storyboardIdentifier="vistaNoticia" id="RsR-Qx-Wj9" customClass="NoticiasTableViewController" customModule="app_cut" customModuleProvider="target" sceneMemberID="viewController">
@@ -555,7 +555,7 @@
                             <outlet property="delegate" destination="RsR-Qx-Wj9" id="3v0-i1-LJ7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="eRC-4R-8VB">
+                    <navigationItem key="navigationItem" title="Noticias" id="eRC-4R-8VB">
                         <barButtonItem key="leftBarButtonItem" image="img_menu" id="EWf-G6-KPe">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
