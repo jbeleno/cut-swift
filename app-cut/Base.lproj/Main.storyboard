@@ -256,6 +256,44 @@
                                             <segue destination="Xn6-Ra-tSz" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Jtb-0o-aFB"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="TcT-Nx-FWP">
+                                        <rect key="frame" x="0.0" y="380" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TcT-Nx-FWP" id="fBO-Wp-POe">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_tv" translatesAutoresizingMaskIntoConstraints="NO" id="OAk-Tx-IU0">
+                                                    <rect key="frame" x="16" y="10" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="24" id="4dD-nq-IhZ"/>
+                                                        <constraint firstAttribute="height" constant="24" id="cFx-eH-G8u"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CUT TV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jI9-9e-7NE">
+                                                    <rect key="frame" x="56" y="12" width="311" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="GCu-8c-eiD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="jI9-9e-7NE" secondAttribute="trailing" constant="8" id="2BP-5I-RW9"/>
+                                                <constraint firstAttribute="bottom" secondItem="OAk-Tx-IU0" secondAttribute="bottom" constant="10" id="GZ6-7H-EzJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="jI9-9e-7NE" secondAttribute="bottom" constant="11" id="NJG-qB-Zlj"/>
+                                                <constraint firstItem="jI9-9e-7NE" firstAttribute="leading" secondItem="OAk-Tx-IU0" secondAttribute="trailing" constant="16" id="hKK-6W-RLV"/>
+                                                <constraint firstItem="OAk-Tx-IU0" firstAttribute="top" secondItem="fBO-Wp-POe" secondAttribute="top" constant="10" id="kPa-eg-gyX"/>
+                                                <constraint firstItem="jI9-9e-7NE" firstAttribute="top" secondItem="fBO-Wp-POe" secondAttribute="top" constant="12" id="oO2-pu-FWf"/>
+                                                <constraint firstItem="OAk-Tx-IU0" firstAttribute="leading" secondItem="fBO-Wp-POe" secondAttribute="leading" constant="16" id="r8u-tQ-yJr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="TYz-lX-iqV" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="zIt-Wc-9Qt"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -908,6 +946,62 @@
             </objects>
             <point key="canvasLocation" x="157.59999999999999" y="2309.5952023988007"/>
         </scene>
+        <!--CUT TV-->
+        <scene sceneID="lgm-6X-teG">
+            <objects>
+                <viewController id="XIa-h6-ITJ" customClass="TvViewController" customModule="app_cut" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gPD-DM-cIQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="cLA-ym-1lN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qG7-aj-mW5">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4k9-PR-S0j">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="XIa-h6-ITJ" id="8Ph-Lo-Q1i"/>
+                                </connections>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargando..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNb-5y-5ss">
+                                <rect key="frame" x="16" y="291" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DBo-Ic-Ciw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kNb-5y-5ss" firstAttribute="centerX" secondItem="qG7-aj-mW5" secondAttribute="centerX" id="EqG-kR-5Qf"/>
+                            <constraint firstItem="4k9-PR-S0j" firstAttribute="leading" secondItem="qG7-aj-mW5" secondAttribute="leading" id="FDf-p1-tWg"/>
+                            <constraint firstAttribute="trailing" secondItem="4k9-PR-S0j" secondAttribute="trailing" id="NyU-mr-oMq"/>
+                            <constraint firstItem="4k9-PR-S0j" firstAttribute="top" secondItem="gPD-DM-cIQ" secondAttribute="bottom" id="SyS-oL-ZTS"/>
+                            <constraint firstItem="kNb-5y-5ss" firstAttribute="centerY" secondItem="qG7-aj-mW5" secondAttribute="centerY" id="XNO-ch-Xvm"/>
+                            <constraint firstItem="kNb-5y-5ss" firstAttribute="leading" secondItem="qG7-aj-mW5" secondAttribute="leading" constant="16" id="e8S-bM-XAw"/>
+                            <constraint firstItem="cLA-ym-1lN" firstAttribute="top" secondItem="4k9-PR-S0j" secondAttribute="bottom" id="f8c-Uo-UK0"/>
+                            <constraint firstAttribute="trailing" secondItem="kNb-5y-5ss" secondAttribute="trailing" constant="16" id="yOY-RO-rYd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CUT TV" id="MfR-QS-87i">
+                        <barButtonItem key="leftBarButtonItem" image="img_menu" id="tXr-sA-urK">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lblLoading" destination="kNb-5y-5ss" id="ci7-4C-wkg"/>
+                        <outlet property="menuButton" destination="tXr-sA-urK" id="mXu-Fv-aDP"/>
+                        <outlet property="webView" destination="4k9-PR-S0j" id="iwj-8X-Iji"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPb-MK-fzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-887.20000000000005" y="2309.5952023988007"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="EbP-as-yUe">
             <objects>
@@ -1015,6 +1109,29 @@
             </objects>
             <point key="canvasLocation" x="1980" y="753.37331334332839"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zmd-bv-cA5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TYz-lX-iqV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="ts7-8Z-T9g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.95848065609999999" green="0.39389848710000003" blue="0.2086200118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XIa-h6-ITJ" kind="relationship" relationship="rootViewController" id="VSD-ry-omN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQK-yV-P0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-887" y="1475"/>
+        </scene>
     </scenes>
     <resources>
         <image name="img_background" width="48" height="48"/>
@@ -1029,9 +1146,10 @@
         <image name="img_phone" width="16" height="16"/>
         <image name="img_placeholder" width="395" height="170"/>
         <image name="img_reloj" width="16" height="16"/>
+        <image name="img_tv" width="16" height="16"/>
         <image name="img_twitter" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="A6R-2c-Ise"/>
+        <segue reference="2RW-Bh-XBR"/>
     </inferredMetricsTieBreakers>
 </document>

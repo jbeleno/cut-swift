@@ -23,6 +23,7 @@
 		0D735AC11E4F92EA00E9CF8F /* EventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D735AC01E4F92EA00E9CF8F /* EventoViewController.swift */; };
 		0D735AC31E4FB53C00E9CF8F /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D735AC21E4FB53C00E9CF8F /* CustomLabel.swift */; };
 		0D735AC61E4FBD0E00E9CF8F /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D735AC51E4FBD0E00E9CF8F /* TwitterViewController.swift */; };
+		0D86A89D1E576DCB00B653FB /* TvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D86A89C1E576DCB00B653FB /* TvViewController.swift */; };
 		0D9222EA1E4A1DC200491F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9222E91E4A1DC200491F1A /* AppDelegate.swift */; };
 		0D9222EF1E4A1DC200491F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9222ED1E4A1DC200491F1A /* Main.storyboard */; };
 		0D9222F11E4A1DC200491F1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9222F01E4A1DC200491F1A /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		0D735AC01E4F92EA00E9CF8F /* EventoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventoViewController.swift; path = ViewControllers/EventoViewController.swift; sourceTree = "<group>"; };
 		0D735AC21E4FB53C00E9CF8F /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomLabel.swift; path = Helpers/CustomLabel.swift; sourceTree = "<group>"; };
 		0D735AC51E4FBD0E00E9CF8F /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterViewController.swift; path = ViewControllers/TwitterViewController.swift; sourceTree = "<group>"; };
+		0D86A89C1E576DCB00B653FB /* TvViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TvViewController.swift; path = ViewControllers/TvViewController.swift; sourceTree = "<group>"; };
 		0D9222E61E4A1DC200491F1A /* app-cut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-cut.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9222E91E4A1DC200491F1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D9222EE1E4A1DC200491F1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				0D735ABE1E4F880100E9CF8F /* NoticiaViewController.swift */,
 				0D735AC01E4F92EA00E9CF8F /* EventoViewController.swift */,
 				0D735AC51E4FBD0E00E9CF8F /* TwitterViewController.swift */,
+				0D86A89C1E576DCB00B653FB /* TvViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				0D735AC61E4FBD0E00E9CF8F /* TwitterViewController.swift in Sources */,
 				0D14EA311E4CDB180030BF07 /* Noticia.swift in Sources */,
 				0D1041441E4A55B0007566C1 /* NoticiasTableViewController.swift in Sources */,
+				0D86A89D1E576DCB00B653FB /* TvViewController.swift in Sources */,
 				0D735ABF1E4F880100E9CF8F /* NoticiaViewController.swift in Sources */,
 				0D735AC11E4F92EA00E9CF8F /* EventoViewController.swift in Sources */,
 				0D4DAD8C1E4B34C10071DE7F /* InformacionViewController.swift in Sources */,
