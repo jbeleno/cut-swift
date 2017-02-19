@@ -15,7 +15,7 @@ class EventosModel {
     let paramStatus = "status"
     let paramPosts = "eventos"
     let argOffset = "offset"
-    let linkNoticias = "http://52.27.16.14/cut/eventos/ver"
+    let linkNoticias = "https://cut.curubagram.com/cut/eventos/ver"
     let errorMessage = "Por favor, verifica tu conexión a internet."
     let internalErrorMessage = "Estamos teniendo algunos problemas en nuestros servidores, intenta de nuevo en algunos minutos."
     

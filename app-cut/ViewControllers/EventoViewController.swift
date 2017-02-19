@@ -19,7 +19,7 @@ class EventoViewController: UIViewController {
     @IBOutlet weak var lblSchedule: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     
-    let linkEvento = "http://52.27.16.14/cut/eventos/detalle"
+    let linkEvento = "https://cut.curubagram.com/cut/eventos/detalle"
     var eventIdentifier: String = ""
     let paramOK = "OK"
     let paramStatus = "status"

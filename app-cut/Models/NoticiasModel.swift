@@ -15,7 +15,7 @@ class NoticiasModel {
     let paramStatus = "status"
     let paramPosts = "publicaciones"
     let argOffset = "offset"
-    let linkNoticias = "http://52.27.16.14/cut/feed/ver"
+    let linkNoticias = "https://cut.curubagram.com/cut/feed/ver"
     let errorMessage = "Por favor, verifica tu conexión a internet."
     let internalErrorMessage = "Estamos teniendo algunos problemas en nuestros servidores, intenta de nuevo en algunos minutos."
     

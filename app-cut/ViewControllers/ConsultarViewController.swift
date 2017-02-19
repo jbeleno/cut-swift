@@ -19,7 +19,7 @@ class ConsultarViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var lblMsg: UILabel!
     
-    let linkConsulta = "http://52.27.16.14/cut/consultas/nueva"
+    let linkConsulta = "https://cut.curubagram.com/cut/consultas/nueva"
     let paramOK = "OK"
     let paramStatus = "status"
     let paramCorreo = "correo"

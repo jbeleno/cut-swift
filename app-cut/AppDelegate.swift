@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let paramPlatform = "plataforma"
     let paramOK = "OK"
     let paramStatus = "status"
-    let linkSaveToken = "http://52.27.16.14/cut/usuarios/registrar"
+    let linkSaveToken = "https://cut.curubagram.com/cut/usuarios/registrar"
     let flag = "itWasSentToServer"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
