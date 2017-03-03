@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<false/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
@@ -27,6 +33,11 @@
 		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
+			<key>cut.org.co</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
 			<key>curubagram.com</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>

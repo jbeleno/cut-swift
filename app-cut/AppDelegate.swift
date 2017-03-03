@@ -32,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let flag = "itWasSentToServer"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        setenv("CFNETWORK_DIAGNOSTICS", "3", 1);
         Fabric.with([Twitter.self])
         
         // Register for remote notifications. This shows a permission dialog on first run, to

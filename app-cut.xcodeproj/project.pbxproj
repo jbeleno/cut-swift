@@ -43,6 +43,7 @@
 		0D4DAD891E4B34A60071DE7F /* ConsultarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsultarViewController.swift; path = ViewControllers/ConsultarViewController.swift; sourceTree = "<group>"; };
 		0D4DAD8B1E4B34C10071DE7F /* InformacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InformacionViewController.swift; path = ViewControllers/InformacionViewController.swift; sourceTree = "<group>"; };
 		0D4DAD8D1E4B4A990071DE7F /* NoticiaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoticiaTableViewCell.swift; path = Cells/NoticiaTableViewCell.swift; sourceTree = "<group>"; };
+		0D6282361E5B49F6008BC2F4 /* app-cut.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "app-cut.entitlements"; sourceTree = "<group>"; };
 		0D735ABE1E4F880100E9CF8F /* NoticiaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoticiaViewController.swift; path = ViewControllers/NoticiaViewController.swift; sourceTree = "<group>"; };
 		0D735AC01E4F92EA00E9CF8F /* EventoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventoViewController.swift; path = ViewControllers/EventoViewController.swift; sourceTree = "<group>"; };
 		0D735AC21E4FB53C00E9CF8F /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomLabel.swift; path = Helpers/CustomLabel.swift; sourceTree = "<group>"; };
@@ -146,6 +147,7 @@
 		0D9222E81E4A1DC200491F1A /* app-cut */ = {
 			isa = PBXGroup;
 			children = (
+				0D6282361E5B49F6008BC2F4 /* app-cut.entitlements */,
 				0D1041401E4A2BBB007566C1 /* Helpers */,
 				0D10413F1E4A2BB4007566C1 /* Models */,
 				0D10413E1E4A2BA8007566C1 /* ViewControllers */,
@@ -206,6 +208,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 28SW7WAG39;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -445,6 +452,9 @@
 			baseConfigurationReference = 2A37CC1DB37F094B8AB2CEF6 /* Pods-app-cut.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "app-cut/app-cut.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 28SW7WAG39;
 				INFOPLIST_FILE = "app-cut/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -459,6 +469,8 @@
 			baseConfigurationReference = E8479D5F3BA174349E3A60CB /* Pods-app-cut.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "app-cut/app-cut.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 28SW7WAG39;
 				INFOPLIST_FILE = "app-cut/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
